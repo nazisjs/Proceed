@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grade.css">
+    <title>Proceed</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="images/logo (2).svg">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="toggler menu-toggler">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">
+                        <i class="fa-solid fa-table-columns"></i><span class="dash"> Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="schedule.html" class="nav-link">
+                        <i class="fa-solid fa-calendar"></i><span class="dash"> Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-book"></i><span class="dash"> Grades</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <i class="fa-regular fa-user"></i><span class="dash"> Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i><span class="dash"> Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <nav class="third_nav">
+        <ul class="lists">
+            <h2 class="link1">Proceed</h2>
+            <div class="pic">
+            <h5 class="name">Tim Berners</h5>
+            <img href="profile.html" class="photo1" src="images/user.jpg" >
+            </div>
+            <div class="icons">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-envelope"></i>
+            </div>
+        </ul>
+    </nav>
+    <section class="course_results">
+        <div class="all-selections">
+        <div id="mainfilter" data-filter="all" class="filter">
+            <i class="fa-solid fa-filter"></i>
+            <p>All subjects</p>
+        </div>
+        <div id="mainfilter" data-filter="main" class="filter">
+            <i class="fa-solid fa-filter"></i>
+            <p>Main subjects</p>
+        </div>
+        <div id="secondfilter" data-filter="second" class="filter">
+            <i class="fa-solid fa-filter"></i>
+            <p>Secondary subjects</p>
+        </div>
+        </div>
+        <h1 class="heading1">Brief grade overview</h1>
+        <p class="student">Student: Tim Berners</p>
+        <p class="student">Group: SE1029</p>
+        <div data-filter="main" class="result-container">
+            <p class="name">Teacher: O.Dorma</p>
+            <p class="name">Multithreaded Application Development with Python</p>
+            <p class="grade">Grade: A</p>
+            <p class="grade">GPA: 4</p>
+        </div>
+        <div data-filter="main" data-filter="all" class="result-container">
+            <p class="name">Teacher: B.Cassie</p>
+            <p class="name">Cybersecurity Threatenings and Countermeasure</p>
+            <p class="grade">Grade: A-</p>
+            <p class="grade">GPA: 3.67</p>
+        </div>
+        <div data-filter="second" data-filter="all" class="result-container">
+            <p class="name">Teacher: A.Kolley</p>
+            <p class="name">Ethical Considerations and Practices in Marketing Way</p>
+            <p class="grade">Grade: A</p>
+            <p class="grade">GPA: 4</p>
+        </div>
+        <div data-filter="main"  data-filter="all"  class="result-container">
+            <p class="name">Teacher: J.Thompson</p>
+            <p class="name">Advanced Algorithms,Data Structures:Quick-solving </p>
+            <p class="grade">Grade: A</p>
+            <p class="grade">GPA: 3.67</p>
+        </div>
+        <div data-filter="second"  data-filter="all" class="result-container">
+            <p class="name">Teacher: L.Dupont</p>
+            <p class="name">French 111 -"Perfectionnement en langue française"</p>
+            <p class="grade">Grade: A</p>
+            <p class="grade">GPA: 3.67</p>
+        </div>
+        <p id="overall-gpa">Overall GPA:</p>
+        <p class="credit">Credits: 0</p>
+    </section>
+    <h1 class="heading1">Detailed grade overview</h1>
+    <p class="student">Student: Tim Berners</p>
+    <p class="student">Group: SE1029</p>
+    <section class="table-of-grades">
+        <table id="september"  data-filter="september">
+            <tr>
+                <th class="highlight2">№</th>
+                <th class="highlight2">Name of the discipline</th>
+                <th class="highlight2" >Volume in study hours</th>
+                <th class="highlight2">Number of credits</th>
+                <th class="highlight2">As a percentage</th>
+                <th class="highlight2">Alphabetic</th>
+                <th class="highlight2">In points</th>
+                <th class="highlight2">Traditional</th>
+            </tr>
+            <tr>
+                <td class="highlight"><b>1</b></td>
+                <td>Multithreaded Application Development with Python</td>
+                <td>48</td>
+                <td>0</td>
+                <td>99</td>
+                <td>A</td>
+                <td>4</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>2</b></td>
+                <td>Cybersecurity Threatenings and Countermeasure</td>
+                <td>96</td>
+                <td>0</td>
+                <td>91</td>
+                <td>A-</td>
+                <td>3.67</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>3</b></td>
+                <td>Ethical Considerations and Practices in Marketing Way</td>
+                <td>72</td>
+                <td>0</td>
+                <td>95</td>
+                <td>A</td>
+                <td>4</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>4</b></td>
+                <td>Advanced Algorithms,Data Structures:Quick-solving</td>
+                <td>96</td>
+                <td>0</td>
+                <td>92</td>
+                <td>A-</td>
+                <td>3.67</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td class="highlight"><b>4</b></td>
+                <td>Perfectionnement en langue française</td>
+                <td>32</td>
+                <td>0</td>
+                <td>94</td>
+                <td>A-</td>
+                <td>3.67</td>
+                <td>Excellent</td>
+            </tr>
+        </table>
+    </section>
+    <h1 class="grade-text">Homework overview</h1>
+    <section class="homework">
+        <div class="statistic-container">
+            <div class="skill">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="20" fill="none"></circle>
+                    <circle class="progress3" cx="80" cy="80" r="70" stroke="cornflowerblue" stroke-width="20" fill="none" stroke-linecap="round"></circle>
+                </svg>
+                <div class="inner">
+                    <div class="number">85%</div><br>
+                </div>
+            </div>
+            <div class="out">
+                <div class="name_subject">
+                    <p>Ethics in Business</p>
+                    <hr>
+                </div>
+                <br>
+                <div class="name_subject">
+                    <p>Teacher's advice: Good job! Train your speaking skills!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="statistic-container">
+            <div class="skill">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="20" fill="none"></circle>
+                    <circle class="progress4" cx="80" cy="80" r="70" stroke="green" stroke-width="20" fill="none" stroke-linecap="round"></circle>
+                </svg>
+                <div class="inner">
+                    <div class="number">100%</div>
+                </div>
+            </div>
+            <div class="out">
+                <div class="name_subject">
+                    <p>Python Advanced Loops task 5</p>
+                    <hr>
+                </div>
+                <br>
+                <div class="name_subject">
+                    <p>Teacher's advice: Excellent!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="statistic-container">
+            <div class="skill">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="20" fill="none"></circle>
+                    <circle class="progress2" cx="80" cy="80" r="70" stroke="green" stroke-width="20" fill="none" stroke-linecap="round"></circle>
+                </svg>
+                <div class="inner">
+                    <div class="number">95%</div>
+                </div>
+            </div>
+            <div class="out">
+                <div class="name_subject">
+                    <p>SQL injection | Practice task 2</p>
+                    <hr>
+                </div>
+                <br>
+                <div class="name_subject">
+                    <p>Teacher's advice: Nice! I saw your best in your SQL quiz</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="statistic-container">
+            <div class="skill">
+                <svg width="160" height="160">
+                    <circle cx="80" cy="80" r="70" stroke="#ddd" stroke-width="20" fill="none"></circle>
+                    <circle class="progress" cx="80" cy="80" r="70" stroke="orange" stroke-width="20" fill="none" stroke-linecap="round"></circle>
+                </svg>
+                <div class="inner">
+                    <div class="number">70%</div>
+                </div>
+            </div>
+            <div class="out">
+                <div class="name_subject">
+                    <p>HW for Python functions</p>
+                    <hr>
+                    <br>
+                    <div class="name_subject">
+                        <p>Teacher's advice: Good! Next time be attentive!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <ul class="flink">
+                <h3 class="ftext">Proceed-Education Platform</h3>
+                <li class="links" a href="#">&copy;2025 All rights reserved</li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+    <script src="sidebar4.js"></script>
+    <script src="gpa.js"></script>
+    <script src="filters_subject.js"></script>
+    </html>

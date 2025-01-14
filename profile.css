@@ -1,0 +1,239 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #ffffff;
+}
+.sidebar{
+    background-color: rgb(36, 39, 69);
+    box-shadow: 0px -1px 6px -1px rgba(42, 67, 86, 0.2);
+    width: 270px;
+    height:100%;
+    position: fixed;
+    height: calc(100vh-32px);
+    transition: 0.4s ease;
+    display: block;
+}
+.sidebar.collapsed{
+   width:85px;
+}
+.sidebar-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:25px 20px;
+}
+.sidebar-nav .nav-list{
+    list-style: none;
+    display: flex;
+    gap:4px;
+    flex-direction: column;
+    text-decoration: none;
+    transition: 0.4 ease;
+    padding: 25px 10px;
+}
+.sidebar-header .toggler{
+    height:40px;
+    width:40px;
+    background:#fff;
+    border:none;
+    cursor:pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius:8px;
+}
+.fa-table-columns,.fa-book,.fa-calendar,.fa-lock,.fa-gear,.fa-user,.fa-right-from-bracket{
+    margin-left:3px;
+}
+.sidebar.collapsed .sidebar-header .toggler{
+    transform:translate(-45px,65px);
+}
+.sidebar.collapsed .sidebar-nav .primary-nav{
+    transform: translateY(65px);
+}
+.sidebar-header .header-logo img{
+    width:50px;
+    display: block;
+    object-fit: contain;
+}
+.sidebar-nav .nav-link{
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+    gap:12px;
+    align-items: center;
+    padding:18px 20px;
+    text-decoration: none;
+    transition:0.4 ease-in-out;
+    border-radius: 8px;
+}
+.sidebar-nav .nav-link:hover{
+    color:#151a2d;
+    background: #fff;
+    transition: 0.3s;
+    
+}
+.sidebar.collapsed .sidebar-nav .nav-link .dash{
+    opacity:0;
+    pointer-events: none;
+}
+
+button.toggler.menu-toggler{
+    display: none;
+}
+.third_nav{
+    box-shadow: 4px 3px 8px 0px rgba(141, 155, 165, 0.2);
+    display: flex;
+    background-color: #ffffff;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.icons{
+    margin-right:40px;
+    font-size:18px;
+    
+}
+.photo1{
+    width:30px;
+    cursor: pointer;
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.lists{
+    display: flex;
+    justify-content:space-between;
+}
+.link1{
+    color:#ffe81a;
+    margin-right:30px;
+}
+.pic{
+    display: flex;
+    margin-top:5px;
+}
+.pic h5{
+    margin-top:5px;
+    margin-right:10px;
+    color:#a2a0a0;
+}
+.icons{
+    color: #d9d9d9;
+    margin-top:6px;
+    margin-left:30px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+
+}
+.profile-container-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    background-color: #f8f8f8;
+    box-shadow: 4px 3px 8px 0px rgba(141, 155, 165, 0.2);
+    padding: 20px;
+    margin-top:50px;
+    margin-left:220px;
+    height: auto;
+}
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pic1{
+    width:250px;
+    height:250px;
+    border-radius: 10px;
+    margin-top:20px;
+}
+.student-info-all{
+    background-color: #f8f8f8;
+    box-shadow: 4px 3px 8px 0px rgba(141, 155, 165, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left:40px;
+    width:23%;
+    padding:10px 20px;
+    margin-top:50px;
+}
+.student-info{
+    margin-bottom: 10px;
+}
+.taken_courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 71%;
+    max-height: 1200px;
+    margin-left:330px;
+    background-color: #f8f8f8;
+    box-shadow: 4px 3px 8px 0px rgba(141, 155, 165, 0.2);
+    padding: 20px;
+    margin-top:50px;
+}
+
+.iconandnaming{
+    display: flex;
+    margin-top:20px;
+    width: 100%;
+}
+.iconandnaming{
+    background-color: #ffffff;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(140, 142, 143, 0.2);
+    cursor: pointer;
+}
+.iconandnaming:hover{
+    background-color: #edecec;
+    transition-duration: 0.2s;
+}
+#bell,#gear,#bracket{
+    color: #151a2d;
+    margin-left:10px;
+}
+.profile-container h3,p{
+    color: #585555;
+}
+.student-info h3,p{
+    color: #585555;
+    margin-top:20px;
+}
+.taken_courses h3,p{
+    color: #585555;
+    margin-top:20px;
+}
+footer{
+    background-color: #a1a9c1;
+    color: #fff;
+}
+.footer-content{
+
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-top:50px;
+}
+.links{
+    list-style-type: none;
+    margin-left:40px;
+}
+h3.ftext{
+    margin-left:10px;
+}

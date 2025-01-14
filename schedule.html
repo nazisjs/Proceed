@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="schedule.css">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="images/logo (2).svg">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="toggler menu-toggler">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">
+                        <i class="fa-solid fa-table-columns"></i><span class="dash"> Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-calendar"></i><span class="dash"> Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="grade.html" class="nav-link">
+                        <i class="fa-solid fa-book"></i><span class="dash"> Grades</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <i class="fa-regular fa-user"></i><span class="dash"> Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i><span class="dash"> Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <nav class="third_nav">
+        <ul class="lists">
+            <h2 class="link1">Proceed</h2>
+            <div class="pic">
+            <h5 class="name">Tim Berners</h5>
+            <img href="profile.html" class="photo1" src="images/user.jpg" >
+            </div>
+            <div class="icons">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-envelope"></i>
+            </div>
+        </ul>
+    </nav>
+    <section class="schedule">
+        <h1>Schedule for 1 semester</h1>
+        <div class="schedule-table">
+            <ul id="month">
+                <li class="day" href="#">Today</li>
+            </ul>
+            <p class="duration">Starting date of lessons: 01.09.2024</p>
+            <p class="duration">Ending date of lessons: 15.12.2024</p>
+            <select id="data-select" name="Week" aria-placeholder="Week">
+                <option value="this">This week</option>
+                <option value="previous">Previous week</option>
+                <option value="next">Next week</option>
+            </select>
+            <select id="data-filter">
+                <option value="all">All</option>
+                <option value="september">02.09.2024-30.09.2024</option>
+                <option value="october" >01.10.2024-31.10.2024</option>
+                <option value="november">04.11.2024-30.11.2024</option>
+                <option value="december">02.12.2024-31.12.2024</option>
+                <option value="january">01.01.2025-31.01.2025</option>             
+            </select>
+        </div>
+        <div class="table-content" data-filter="september" data-select="previous">
+            <table id="september"  data-filter="september">
+                <tr>
+                    <th>SEP,24</th>
+                    <th>02 MON</th>
+                    <th>03 TUE</th>
+                    <th>04 WED</th>
+                    <th>05 THU</th>
+                    <th>06 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1 floor</td>
+                    <td>Ethics<br>Classroom:103,1fr</td>
+                    <td>CCNA 200-301<br>Classroom:112,1fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:312,3fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math Test<br>Classroom:212,2fr
+                    <div class="importance2"><p>Bring with you only 1 help sheet</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom:213,2fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:312,3fr</td>
+                    <td>Ethics<br>Classroo:204,2fr</td>
+                    <td>Music<br>Music Hall</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:101,1fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+            </table>
+            <table data-filter="september" data-select="previous">
+                <tr>
+                    <th>SEP,24</th>
+                    <th>09 MON</th>
+                    <th>10 TUE</th>
+                    <th>11 WED</th>
+                    <th>12 THU</th>
+                    <th>13 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity QUIZ N2
+                        <br>Classroom:112,1fr
+                        <div class="importance"><p>No bonus time!</p></div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>Music<br>Music Hall</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:312,3fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+            </table>
+            <table data-filter="september" data-select="previous">
+                <tr>
+                    <th>SEP,24</th>
+                    <th>16 MON</th>
+                    <th>17 TUE</th>
+                    <th>18 WED</th>
+                    <th>19 THU</th>
+                    <th>20 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:312,3fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math
+                        <br>Classroom:212,2fr
+                        <div class="importance3">
+                            <p>Rules that you must know!<br>
+                                1.Avoid from interruption (-10% for class contribution)<br>
+                                2.Try your best<br>
+                                3.Be on time!
+                            </p>
+                        </div>
+                    </td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>Music<br>Music Hall</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+            </table>
+             <table data-filter="september" data-select="previous">
+                <tr>
+                    <th>SEP,24</th>
+                    <th>16 MON</th>
+                    <th>17 TUE</th>
+                    <th>18 WED</th>
+                    <th>19 THU</th>
+                    <th>20 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:100,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>Music<br>Music Hall</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+            </table>
+            <table  data-filter="september" data-select="previous">
+                <tr>
+                    <th>SEP,24</th>
+                    <th>23 MON</th>
+                    <th>24 TUE</th>
+                    <th>25 WED</th>
+                    <th>26 THU</th>
+                    <th>27 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>Music<br>Music Hall</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>History<br>Classroom:201,2fr</td>
+                </tr>
+            </table>
+            <table data-filter="october" data-select="previous">
+                <tr>
+                    <th>OCT,24</th>
+                    <th>30 MON</th>
+                    <th>01 TUE</th>
+                    <th>02 WED</th>
+                    <th>03 THU</th>
+                    <th>04 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>-</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>-</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>Music-Done</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="october" data-select="previous">
+                <tr>
+                    <th>OCT,24</th>
+                    <th>07 MON</th>
+                    <th>08 TUE</th>
+                    <th>09 WED</th>
+                    <th>10 THU</th>
+                    <th>11 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>-</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="october" data-select="previous">
+                <tr>
+                    <th>OCT,24</th>
+                    <th>14 MON</th>
+                    <th>15 TUE</th>
+                    <th>16 WED</th>
+                    <th>17 THU</th>
+                    <th>18 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="october" data-select="previous">
+                <tr>
+                    <th>OCT,24</th>
+                    <th>21 MON</th>
+                    <th>22 TUE</th>
+                    <th>23 WED</th>
+                    <th>24 THU</th>
+                    <th>25 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>-<br>Classroom:212,2fr</td>
+                    <td>-<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:204,2fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="october" data-select="previous">
+                <tr>
+                    <th>OCT,24</th>
+                    <th>28 MON</th>
+                    <th>29 TUE</th>
+                    <th>30 WED</th>
+                    <th>31 THU</th>
+                    <th>1 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom:112,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:204,2fr</td>
+                    <td>Calculus<br>Classroom:112,1fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="november"data-select="previous">
+                <tr>
+                    <th>NOV,24</th>
+                    <th>4 MON</th>
+                    <th>5 TUE</th>
+                    <th>6 WED</th>
+                    <th>7 THU</th>
+                    <th>8 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="november" data-select="previous">
+                <tr>
+                    <th>NOV,24</th>
+                    <th>11 MON</th>
+                    <th>12 TUE</th>
+                    <th>13 WED</th>
+                    <th>14 THU</th>
+                    <th>15 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="november"data-select="previous">
+                <tr>
+                    <th>NOV,24</th>
+                    <th>18 MON</th>
+                    <th>19 TUE</th>
+                    <th>20 WED</th>
+                    <th>21 THU</th>
+                    <th>22 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="november"data-select="previous">
+                <tr>
+                    <th>NOV,24</th>
+                    <th>25 MON</th>
+                    <th>26 TUE</th>
+                    <th>27  WED</th>
+                    <th>28 THU</th>
+                    <th>29 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity
+                        <div class="importance3">
+                            <p>No classes are available due to the olympics</p>
+                        </div>
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="december"data-select="this">
+                <tr>
+                    <th>DEC,24</th>
+                    <th>2 MON</th>
+                    <th>3 TUE</th>
+                    <th>4  WED</th>
+                    <th>5 THU</th>
+                    <th>6 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="december"data-select="this">
+                <tr>
+                    <th>DEC,24</th>
+                    <th>9 MON</th>
+                    <th>10 TUE</th>
+                    <th>11 WED</th>
+                    <th>12 THU</th>
+                    <th>13 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="december" data-select="this">
+                <tr>
+                    <th>DEC,24</th>
+                    <th>9 MON</th>
+                    <th>16 TUE</th>
+                    <th>17 WED</th>
+                    <th>18 THU</th>
+                    <th>19 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="december" data-select="this">
+                <tr>
+                    <th>DEC,24</th>
+                    <th>23 MON</th>
+                    <th>24 TUE</th>
+                    <th>25 WED</th>
+                    <th>26 THU</th>
+                    <th>27 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table data-filter="january" data-select="next">
+                <tr>
+                    <th>JAN,25</th>
+                    <th>30 MON</th>
+                    <th>31 TUE</th>
+                    <th>1 WED</th>
+                    <th>2 THU</th>
+                    <th>3 FRI</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>09:00-10:00</b></td>
+                    <td>Python Advanced Course<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>10:10-11:00</b></td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr
+                    </td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                    <td>Math<br>Classroom:212,2fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>11:10-12:00</b></td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:10-12:50</b></td>
+                    <td>CCNA 200-301<br>Classroom:311,3fr</td>
+                    <td>English<br>Classroom:204,2fr</td>
+                    <td>French<br>Classroom:104,1fr</td>
+                    <td>Calculus<br>Classroom 212,2fr</td>
+                    <td>OOP<br>Classroom:312,3fr</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>12:50-14:00</b></td>
+                    <td>Cybersecurity<br>Classroom:112,1fr</td>
+                    <td>Python Advanced course<br>Classroom:123,1fr</td>
+                    <td>PE<br>Classroom:123,1fr</td>
+                    <td>Ethics<br>Classroom:204,2fr</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <ul class="flink">
+                <h3 class="ftext">Proceed-Education Platform</h3>
+                <li class="links" a href="#">&copy;2025 All rights reserved</li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+    <script src="sidebar2.js"></script>
+    <script src="filter.js"></script>
+    </html>
