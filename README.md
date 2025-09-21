@@ -2,7 +2,7 @@
 
 <p id="description">Proceed- is similar educational product like MoodleSmart nation with better and understandable interface. 📚⭐</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀Desktop Version Demo</h2>
 
 [https://proceed-main.vercel.app/](https://proceed-main.vercel.app/)
 
